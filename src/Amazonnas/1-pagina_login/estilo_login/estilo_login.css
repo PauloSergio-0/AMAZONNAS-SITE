@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+/* Reset de estilos para todos os elementos */
+body * {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0; /* Remove o espaçamento interno padrão dos elementos */
+
+  }
+  
+  /* Estilos globais para o corpo da página */
+  body { 
+    margin-right: auto;  
+    margin: 0; /* Remove a margem padrão dos elementos */
+    font-family: 'Roboto', sans-serif;
+    background: #2a2f47;/* Define a família de fontes para o corpo da página */
+  }
+  
+  /* Estilos para o cabeçalho (navbar) */
+  .Head-conteudo-interno {
+    max-width: 1500px; /* Define a largura máxima do conteúdo interno */
+    margin-left: auto; /* Centraliza o conteúdo horizontalmente */
+    margin-right: auto; /* Centraliza o conteúdo horizontalmente */
+  }
+  
+  
+  .Navbar {
+    font-family: Arial;
+    background-color: #352E57; /* Define a cor de fundo da barra de navegação */
+    padding: 1rem; /* Adiciona um preenchimento interno à barra de navegação */
+    position: sticky; /* Define a posição como "sticky" para que a barra de navegação permaneça visível enquanto a página é rolada */
+    top: 0; /* Fixa a barra de navegação na parte superior */
+    box-shadow: 0px 0px 10px #383a3b; /* Adiciona uma sombra à barra de navegação */
+    z-index: 99; /* Define uma ordem z para garantir que a barra de navegação esteja acima de outros elementos */
+
+
+  }
+  
+  .Navbar > div {
+
+    display: flex; /* Define um layout flexível para os elementos filhos da barra de navegação */
+    align-items: center; /* Alinha verticalmente os elementos filhos ao centro */
+    justify-content: space-between; /* Distribui o espaço entre os elementos filhos */
+    position: relative; /* Define a posição como "relativa" para os elementos filhos */
+  }
+  
+  .A-logo {
+    color: #415ce0; /* Define a cor do texto do logotipo da empresa */
+    text-decoration: none;/*isso remove o sublinhado do link*/
+    cursor: pointer;
+  }
+  
+  .A-logo span {
+    color: #e0b941; /* Define a cor do texto dentro do span */
+  }
+  
+  nav > ul {
+    display: flex; /* Define um layout flexível para a lista de navegação */
+    list-style: none; /* Remove os marcadores de lista */
+    align-items: center; /* Alinha verticalmente os itens da lista ao centro */
+  }
+  .b-login a {
+    text-decoration: none;
+  }
+  .b-login button{
+
+    display: flex; /* Define um layout flexível para o contêiner de ícones */
+    align-items: center; /* Alinha verticalmente os ícones ao centro */
+    background-color: #485287; /* Define a cor de fundo do botão */
+    border: 2px solid #76C0CF; /* Remove a borda do botão */
+    cursor: pointer; /* Adiciona um cursor de ponteiro ao botão */
+    padding: 0.5rem 0.5rem; /* Adiciona preenchimento interno ao botão */
+    border-radius: 9999px; /* Define um raio de borda arredondado para o botão */
+    color: #fff; /* Define a cor do texto do botão */
+    font-weight: bold; /* Define o peso da fonte para o texto do botão */
+    font-size: 1rem; /* Define o tamanho da fonte para o texto do botão */
+    transition: all 0.2s; /* Adiciona uma transição suave */
+  }
+  .b-login button:hover {
+    background-color: #2E2752 /* Define a cor de fundo do botão quando hover (passar o mouse por cima) */
+  }
+  
+    /* Estilos para o cabeçalho (navbar) */
+
+    /*página login*/
+  .main-login{
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .left-login{
+    margin: 10px;
+    height:45vw;
+    width: 95vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column ;
+  }
+  .left-login > h1{
+    font-size: 2.5vw;
+    color: #93A5FA;
+  }
+  .left-login > img{
+    width: 30vw;
+  }
+
+  .right-login{
+    height:45vw;
+    width: 95vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-login{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background:#5A6599;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #42475f;
+    font-family: Arial, Helvetica, sans-serif
+  }
+  .card-login > h1{
+    margin-bottom: 20px;
+    color:#9ACAE5;
+    font-weight: 800;
+    margin: 0;
+  }
+
+  .textfield{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px;
+  }
+    /*página login*/
+
+    /*ESTILO*/
+    .textfield > input{
+      width: 100%;
+      border: none;
+      border-radius: 10px;
+      padding: 10px 15px;
+      background:#CCD0E5 ;
+      color: #524d4d;
+      font-size: 12pt;
+      box-shadow:  0px 10px 40px #383a3b;
+      outline: none;
+      box-sizing: border-box;
+    }
+    .textfield > label{
+      color: #fff4f4;
+      margin-bottom: 10px;
+    }
+
+    .textfield > input::placeholder{
+      color: #5e5e5e94;
+    }
+    .beautiful-button {
+      position: relative;
+      display: inline-block;
+      background: linear-gradient(to bottom, #1b1c3f, #4a4e91);
+     /* Gradient background */
+      color: white;
+     /* White text color */
+      font-family: "Segoe UI", sans-serif;
+     /* Stylish and legible font */
+      font-weight: bold;
+      font-size: 18px;
+     /* Large font size */
+      border: none;
+     /* No border */
+      border-radius: 30px;
+     /* Rounded corners */
+      padding: 16px 60px;
+     /* Large padding */
+      cursor: pointer;
+     /* Cursor on hover */
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+     /* Subtle shadow */
+      animation: button-shimmer 2s infinite;
+      transition: all 0.3s ease-in-out;
+     /* Smooth transition */
+    }
+    
+    /* Hover animation */
+    .beautiful-button:hover {
+      background: linear-gradient(to bottom, #2c2f63, #5b67b7);
+      animation: button-particles 1s ease-in-out infinite;
+      transform: translateY(-2px);
+      
+    }
+    
+    /* Click animation */
+    .beautiful-button:active {
+      transform: scale(0.95);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    /* Shimmer animation */
+    @keyframes button-shimmer {
+      0% {
+        background-position: left top;
+      }
+    
+      100% {
+        background-position: right bottom;
+      }
+    }
+    
+    /* Particle animation */
+    @keyframes button-particles {
+      0% {
+        background-position: left top;
+      }
+    
+      100% {
+        background-position: right bottom;
+      }
+    }
+    
+    .btt-l{
+      width: 100%;
+      padding: 16px 18px;
+      margin: 25px;
+      border: none;
+      border-radius: 99px;
+      outline: none;
+      text-transform: uppercase;
+      font-weight: 800;
+      letter-spacing: 3px;
+      color: #c9d2ff;
+      background-color:#415ce0;
+      cursor: pointer;
+      box-shadow:  0 10px 40px -12px #6b84ff;
+    }
+    .b-voltar {
+      position: fixed;
+      bottom: 20px; /* Ajuste a distância do botão em relação à parte inferior da página conforme necessário */
+      right: 20px; /* Ajuste a distância do botão em relação à direita da página conforme necessário */
+      z-index: 999; /* Certifique-se de que o botão esteja acima de outros elementos */
+    }
+    .b-voltar button{
+      background-color: #485287; /* Define a cor de fundo do botão */
+      border: 2px solid #76C0CF;  /* Remove a borda do botão */
+      cursor: pointer; /* Adiciona um cursor de ponteiro ao botão */
+      padding: 0.5rem 0.5rem; /* Adiciona preenchimento interno ao botão */
+      border-radius: 9999px; /* Define um raio de borda arredondado para o botão */
+      color: #fff; /* Define a cor do texto do botão */
+      font-weight: bold; /* Define o peso da fonte para o texto do botão */
+      font-size: 0.8rem; /* Define o tamanho da fonte para o texto do botão */
+      transition: all 0.2s;
+    }
+    .b-voltar button:hover{
+      background-color: #2E2752; 
+    }
+
+    /*Media Queries*/
+    @media only screen and (max-width: 800px){
+      .main-login{
+        flex-direction: column;
+      
+      }
+      .card-login{
+        width: 80%;
+      }
+      .left-login{
+        max-width: 100%;
+        height: auto;
+      }
+      .left-login>h1{
+        display: none;
+
+      }
+      .left-login >img{
+        width: 45%;  
+      }
+      .card-login> button{
+        width: 45%;
+        padding: 15px 8px;
+    }
+  }
+    @media only screen and (max-width: 600px){
+      .main-login{
+        flex-direction: column;
+      }
+      .left-login > h1{
+        display: none;
+      }
+      .left-login{
+        max-width: 100%;
+        height: auto;
+      }
+      .left-login >img{
+        width: 60vw;
+        margin-bottom: 50px;      
+      }
+      .card-login{
+        width: 90%;
+      }
+    }
+    
+    /*Media Queries*/
