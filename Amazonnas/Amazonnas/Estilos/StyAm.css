@@ -1,0 +1,450 @@
+/* Reset de estilos para todos os elementos */
+* {
+  box-sizing: border-box; /* Define a caixa de modelagem como border-box para evitar problemas de layout */
+  padding: 0; /* Remove o espaçamento interno padrão dos elementos */
+  margin: 0; /* Remove a margem padrão dos elementos */
+}
+
+/* Estilos globais para o corpo da página */
+body {
+  font-family: "Arial"; /* Define a família de fontes para o corpo da página */
+}
+
+/* Estilos para o cabeçalho (navbar) */
+.Head-conteudo-interno {
+  max-width: 1480px; /* Define a largura máxima do conteúdo interno */
+  margin-left: auto; /* Centraliza o conteúdo horizontalmente */
+  margin-right: auto; /* Centraliza o conteúdo horizontalmente */
+}
+
+.Navbar {
+  background-color: #383a3b; /* Define a cor de fundo da barra de navegação */
+  padding: 1rem; /* Adiciona um preenchimento interno à barra de navegação */
+  position: stick; /* Define a posição como "sticky" para que a barra de navegação permaneça visível enquanto a página é rolada */
+  top: 0; /* Fixa a barra de navegação na parte superior */
+  box-shadow: 10px 0px 10px #383a3b; /* Adiciona uma sombra à barra de navegação */
+  z-index: 99; /* Define uma ordem z para garantir que a barra de navegação esteja acima de outros elementos */
+}
+
+.Navbar > div {
+  display: flex; /* Define um layout flexível para os elementos filhos da barra de navegação */
+  align-items: center; /* Alinha verticalmente os elementos filhos ao centro */
+  justify-content: space-between; /* Distribui o espaço entre os elementos filhos */
+  position: relative; /* Define a posição como "relativa" para os elementos filhos */
+}
+
+.A-logo {
+  color: #415ce0; /* Define a cor do texto do logotipo da empresa */
+}
+
+.A-logo span {
+  color: #e0b941; /* Define a cor do texto dentro do span */
+}
+
+nav > ul {
+  display: flex; /* Define um layout flexível para a lista de navegação */
+  list-style: none; /* Remove os marcadores de lista */
+  align-items: center; /* Alinha verticalmente os itens da lista ao centro */
+}
+
+.icon-mec {
+  display: flex; /* Define um layout flexível para o contêiner de ícones */
+  align-items: center; /* Alinha verticalmente os ícones ao centro */
+}
+
+.icon-mec img {
+  width: 30px; /* Define a largura das imagens dos ícones */
+  cursor: pointer; /* Adiciona um cursor de ponteiro para indicar que os ícones são clicáveis */
+}
+
+.icon-mec img:first-child {
+  margin-right: 1rem; /* Adiciona margem à direita apenas ao primeiro ícone */
+}
+
+nav ul li {
+  color: #fff; /* Define a cor do texto dos itens de navegação */
+  margin-right: 1.5rem; /* Adiciona margem à direita aos itens de navegação para espaçamento */
+  cursor: pointer; /* Adiciona um cursor de ponteiro aos itens de navegação */
+}
+
+nav ul li:hover {
+  transform: translateY(-5px); /* Aplica uma transformação de translação quando o item de navegação é hover (passar o mouse por cima) */
+  transition: all 0.3s; /* Adiciona uma transição suave */
+  font-weight: bold; /* Define um peso de fonte mais forte para itens de navegação hover */
+}
+.pg-login{
+  text-decoration: none;/*retira o sublinhado do link*/
+}
+
+.menu-b {
+  display: none; /* Inicialmente, o ícone de menu está oculto */
+}
+
+/* Estilos para o cabeçalho principal (header) */
+header {
+  background-image: radial-gradient(#ffffff, #807f7f); /* Define um plano de fundo de gradiente radial */
+}
+
+.hearder-insider {
+  display: flex; /* Define um layout flexível para o conteúdo do cabeçalho */
+  align-items: center; /* Alinha verticalmente os elementos ao centro */
+  justify-self: center; /* Alinha o conteúdo horizontalmente ao centro */
+  padding: 1rem; /* Adiciona preenchimento interno ao conteúdo do cabeçalho */
+  margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+  max-width: 1300px; /* Define a largura máxima do conteúdo do cabeçalho */
+}
+
+.header-blef {
+  height: 100%; /* Define a altura do elemento para ocupar 100% da altura disponível */
+  flex-basis: 50%; /* Define a base flexível para ocupar metade do espaço disponível */
+}
+
+.header-blef h2 {
+  font-size: 3rem; /* Define o tamanho da fonte para o título */
+  margin-bottom: 1.5rem; /* Adiciona margem inferior ao título */
+}
+
+.header-blef p {
+  line-height: 1.5rem; /* Define a altura da linha para os parágrafos */
+  margin-bottom: 1.5rem; /* Adiciona margem inferior aos parágrafos */
+}
+
+.header-blef button {
+  background-color: #415ce0; /* Define a cor de fundo do botão */
+  border: none; /* Remove a borda do botão */
+  cursor: pointer; /* Adiciona um cursor de ponteiro ao botão */
+  padding: 0.8rem 3rem; /* Adiciona preenchimento interno ao botão */
+  border-radius: 9999px; /* Define um raio de borda arredondado para o botão */
+  color: #fff; /* Define a cor do texto do botão */
+  font-weight: 500; /* Define o peso da fonte para o texto do botão */
+  font-size: 1rem; /* Define o tamanho da fonte para o texto do botão */
+  transition: all 0.2s; /* Adiciona uma transição suave */
+}
+
+.header-blef button:hover {
+  background-color: #2a3d99; /* Define a cor de fundo do botão quando hover (passar o mouse por cima) */
+}
+
+.head-bri {
+  flex-basis: 50%; /* Define a base flexível para ocupar metade do espaço disponível */
+  display: flex; /* Define um layout flexível para o conteúdo da direita do cabeçalho */
+  align-items: center; /* Alinha verticalmente os elementos ao centro */
+  justify-content: center; /* Alinha horizontalmente os elementos ao centro */
+}
+
+.head-bri img {
+  width: 68%; /* Define a largura da imagem */
+}
+
+/* Media Queries para telas menores (largura máxima de 800px) */
+@media (max-width: 800px) {
+  .A-logo {
+    font-size: 1.8rem; /* Reduz o tamanho da fonte do logotipo para telas menores */
+  }
+
+  .menu-b {
+    display: block; /* Exibe o ícone de menu para telas menores */
+  }
+
+  .hearder-insider {
+    flex-direction: column; /* Muda a direção dos elementos internos para coluna */
+    text-align: center; /* Alinha o texto ao centro */
+    padding-top: 4rem; /* Adiciona preenchimento superior */
+  }
+
+  nav {
+    position: absolute; /* Define a posição como absoluta para o menu de navegação */
+    background-color: #383a3b; /* Define a cor de fundo do menu de navegação */
+    width: 100%; /* Define a largura como 100% */
+    top: 46px; /* Define a posição superior */
+    display: none; /* Oculta o menu de navegação */
+    scroll-behavior: smooth; /* Adiciona um comportamento de rolagem suave */
+    opacity: 0; /* Define a opacidade inicial como 0 (oculto) */
+    transition: opacity 1s ease, 1s ease; /* Adiciona uma transição suave para a opacidade */
+    transform: translateY(-10px); /* Move o menu para cima para ocultá-lo */
+  }
+
+  .show-menu nav {
+    display: block; /* Exibe o menu de navegação quando a classe 'show-menu' está presente */
+    opacity: 1; /* Torna o menu de navegação visível */  
+    transform: translateY(0); /* Move o menu de navegação de volta à sua posição original */
+    border-radius: 0 0 20px 20px; /* Adiciona bordas arredondadas à parte inferior do menu */
+    border-top: none; /* Remove a borda superior */
+  }
+
+  nav ul {
+    flex-direction: column; /* Muda a direção da lista de navegação para coluna */
+  }
+
+  nav ul li {
+    text-align: center; /* Alinha o texto dos itens de navegação ao centro */
+    padding: 0.8rem; /* Adiciona preenchimento aos itens de navegação */
+  }
+}
+/* Estilos para a seção principal do conteúdo (main) */
+main {
+  background-color: #d9d8d8; /* Define a cor de fundo da seção principal */
+}
+
+.bk-c {
+  background-color: #383a3b; /* Define a cor de fundo para uma classe com o nome "bk-c" */
+}
+
+.pg-inner {
+  max-width: 1280px; /* Define a largura máxima para o conteúdo interno da página */
+  margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+}
+
+/* Estilos para as colunas de produtos */
+.colunas {
+  display: grid; /* Define um layout de grade para as colunas */
+  justify-content: space-evenly; /* Distribui o espaço uniformemente entre as colunas */
+  padding: 4rem 1rem; /* Adiciona preenchimento à seção de colunas */
+}
+
+.cols-3 {
+  grid-template-columns: repeat(3, 1fr); /* Define três colunas com largura igual */
+  gap: 3rem; /* Define o espaçamento entre as colunas */
+}
+
+.cols-3 img {
+  max-width: 100%; /* Garante que as imagens se ajustem ao tamanho das colunas */
+  border-radius: 10px; /* Adiciona um raio de borda arredondado às imagens */
+}
+
+.cols-4 img {
+  max-width: 100%; /* Garante que as imagens se ajustem ao tamanho das colunas */
+  border-radius: 10px; /* Adiciona um raio de borda arredondado às imagens */
+}
+
+.cols-4 {
+  grid-template-columns: repeat(4, 1fr); /* Define quatro colunas com largura igual */
+  gap: 1rem; /* Define o espaçamento entre as colunas */
+}
+
+.cols-4 {
+  max-width: 100%; /* Garante que as colunas ocupem a largura máxima disponível */
+}
+
+.cols-img {
+  cursor: pointer; /* Adiciona um cursor de ponteiro às imagens */
+  transition: all 0.3s; /* Adiciona uma transição suave a todas as imagens */
+}
+
+.cols-img:hover {
+  transform: translateY(-5px); /* Aplica uma transformação de translação quando a imagem é hover (passar o mouse por cima) */
+}
+
+.titse {
+  text-align: center; /* Alinha o texto ao centro */
+  margin-top: 4rem; /* Adiciona margem superior */
+  font-size: 1.8rem; /* Define o tamanho da fonte */
+}
+
+.subund {
+  width: 300px; /* Define a largura de um elemento com a classe "subund" */
+  height: 5px; /* Define a altura */
+  background-color: #415ce0; /* Define a cor de fundo */
+  border-radius: 9999px; /* Adiciona um raio de borda arredondado */
+  margin: 8px auto 0 auto; /* Adiciona margem às extremidades superior e inferior e centraliza horizontalmente */
+}
+
+.Produtos {
+  color: #383a3b; /* Define a cor do texto */
+  margin: 1rem; /* Adiciona margem ao redor dos produtos */
+  display: flex; /* Define um layout flexível para os produtos */
+  flex-direction: column; /* Define a direção da coluna para os produtos */
+  text-align: center; /* Alinha o texto ao centro */
+}
+
+.Nomep {
+  font-weight: 600; /* Define o peso da fonte para o nome do produto */
+  margin-top: 0.4rem; /* Adiciona margem superior ao nome do produto */
+  text-align: center; /* Alinha o texto ao centro */
+}
+
+.avaliação {
+  text-align: center; /* Alinha o texto de avaliação ao centro */
+  color: #415ce0; /* Define a cor do texto de avaliação */
+  font-size: 1.3rem; /* Define o tamanho da fonte para a avaliação */
+}
+
+.preço span {
+  font-weight: 600; /* Define o peso da fonte para o preço */
+}
+
+.cont-ex {
+  color: #fff; /* Define a cor do texto */
+  flex-direction: row-reverse; /* Inverte a direção das filas para os elementos filho da classe "cont-ex" */
+  padding: 5rem 1rem; /* Adiciona preenchimento à classe "cont-ex" */
+}
+
+.cont-ex img {
+  max-width: 500px; /* Define a largura máxima da imagem */
+}
+
+/* Media Query para telas menores (largura máxima de 800px) */
+@media (max-width: 800px) {
+  .titse {
+    font-size: 1rem; /* Reduz o tamanho da fonte para telas menores */
+  }
+  .cols-3 {
+    grid-template-columns: repeat(1, 1fr); /* Define uma coluna para telas menores */
+    gap: 3rem; /* Define o espaçamento entre as colunas */
+    justify-content: center; /* Centraliza o conteúdo das colunas horizontalmente */
+    align-items: center; /* Centraliza o conteúdo das colunas verticalmente */
+    text-align: center; /* Alinha o texto ao centro */
+  }
+  .cols-3 img {
+    max-width: 100%; /* Garante que as imagens se ajustem ao tamanho da coluna */
+    border-radius: 10px; /* Adiciona um raio de borda arredondado às imagens */
+    display: block; /* Define o comportamento de bloco para as imagens */
+    margin: 0 auto; /* Centraliza as imagens horizontalmente */
+  }
+  .cols-4 {
+    grid-template-columns: repeat(2, 1fr); /* Define duas colunas para telas menores */
+  }
+  .Nomep,
+  .preço,
+  .avaliação {
+    max-height: 1rem; /* Define a altura máxima para o texto */
+    overflow: hidden; /* Oculta qualquer texto que exceda a altura máxima */
+    font-size: 0.8rem; /* Reduz o tamanho da fonte para telas menores */
+  }
+  .cont-ex {
+    flex-direction: column-reverse; /* Inverte a direção das filas para os elementos filho da classe "cont-ex" para telas menores */
+  }
+  .cont-ex img {
+    margin-bottom: 4rem; /* Adiciona margem inferior à imagem */
+  }
+}
+
+/* Estilos para a seção de testemunhos (Tests) */
+.Tests {
+  display: flex; /* Define um layout flexível para os testemunhos */
+  padding: 4rem 1rem; /* Adiciona preenchimento aos testemunhos */
+  justify-content: space-evenly; /* Distribui o espaço uniformemente entre os elementos */
+}
+
+.test {
+  display: flex; /* Define um layout flexível para os elementos com a classe "test" */
+  flex-direction: column; /* Define a direção da coluna para os elementos com a classe "test" */
+  align-items: center; /* Alinha os elementos ao centro horizontalmente */
+  justify-content: center; /* Alinha os elementos ao centro verticalmente */
+  flex-basis: 30%; /* Define o tamanho base dos elementos com a classe "test" */
+  text-align: center; /* Alinha o texto ao centro */
+  box-shadow: 0 0 15px #afafaf; /* Adiciona uma sombra às caixas dos testemunhos */
+  padding: 1rem; /* Adiciona preenchimento às caixas dos testemunhos */
+  border-radius: 1rem; /* Adiciona um raio de borda arredondado às caixas dos testemunhos */
+  cursor: pointer; /* Altera o cursor para um ponteiro ao passar o mouse por cima dos testemunhos */
+  transition: all 0.3s; /* Adiciona uma transição suave a todos os elementos com a classe "test" */
+}
+
+.test:hover {
+  transform: translateY(-5px); /* Aplica uma transformação de translação ao passar o mouse por cima dos testemunhos */
+}
+
+.Test p {
+  margin: 5px 0; /* Adiciona margem superior e inferior às parágrafos dos testemunhos */
+}
+
+.test p:first-child {
+  font-weight: bold; /* Define o peso da fonte para o primeiro parágrafo dos testemunhos */
+  font-size: 5rem; /* Define o tamanho da fonte */
+  color: #415ce0; /* Define a cor do texto */
+  margin-top: 3rem; /* Adiciona margem superior */
+  line-height: 2rem; /* Define a altura da linha */
+}
+
+.avaliação-2 {
+  text-align: center; /* Alinha o texto ao centro */
+  color: #415ce0; /* Define a cor do texto */
+  font-size: 1.3rem; /* Define o tamanho da fonte para a avaliação */
+  margin-top: 1rem; /* Adiciona margem superior */
+}
+
+.test p:last-child {
+  font-weight: bold; /* Define o peso da fonte para o último parágrafo dos testemunhos */
+  margin-top: 1rem; /* Adiciona margem superior */
+}
+
+/* Media Query para telas menores (largura máxima de 800px) */
+@media (max-width: 800px) {
+  .Tests {
+    flex-direction: column; /* Muda a direção dos testemunhos para coluna */
+  }
+  .test {
+    margin-bottom: 1.2rem; /* Adiciona margem inferior aos testemunhos */
+  }
+}
+
+/* Estilos para o rodapé (Footer) */
+.footer-inner {
+  display: flex; /* Define um layout flexível para o conteúdo do rodapé */
+  align-items: center; /* Alinha os elementos ao centro verticalmente */
+  color: #8f8f8f; /* Define a cor do texto */
+  padding: 4rem 1rem; /* Adiciona preenchimento ao rodapé */
+  gap: 2rem; /* Define o espaçamento entre os elementos */
+}
+
+.dowload-options > * {
+  margin: 1rem 0; /* Adiciona margem superior e inferior aos elementos filho de "dowload-options" */
+}
+
+.dowload-options :first-child {
+  font-weight: bold; /* Define o peso da fonte para o primeiro elemento filho de "dowload-options" */
+  color: #fff; /* Define a cor do texto */
+}
+
+.dowload-options > div {
+  display: flex; /* Define um layout flexível para os elementos filho de "dowload-options" */
+}
+
+.dowload-options > div img {
+  width: 100px; /* Define a largura das imagens dos elementos filho de "dowload-options" */
+}
+
+.logo-f {
+  text-align: center; /* Alinha o texto ao centro */
+}
+
+.links-f h3 {
+  color: #fff; /* Define a cor do texto do cabeçalho dos links */
+  margin-bottom: 0.8rem; /* Adiciona margem inferior ao cabeçalho dos links */
+}
+
+.links-f ul {
+  list-style: none; /* Remove os marcadores de lista dos links */
+  white-space: nowrap; /* Impede que os links quebrem em várias linhas */
+}
+
+.links-f ul li {
+  margin-bottom: 0.5rem; /* Adiciona margem inferior aos itens da lista de links */
+  cursor: pointer; /* Altera o cursor para um ponteiro ao passar o mouse por cima dos links */
+}
+
+.copyr {
+  color: #fff; /* Define a cor do texto de direitos autorais */
+  padding: 2rem 0; /* Adiciona preenchimento superior e inferior */
+  text-align: center; /* Alinha o texto de direitos autorais ao centro */
+}
+
+/* Media Query para telas menores (largura máxima de 800px) */
+@media (max-width: 800px) {
+  .footer-inner {
+    display: inline; /* Altera o layout para inline para telas menores */
+    font-size: 0.8rem; /* Reduz o tamanho da fonte para telas menores */
+  }
+  .footer-inner > div {
+    padding: 1rem; /* Adiciona preenchimento aos elementos filho de "footer-inner" */
+  }
+  .dowload-options > div {
+    display: inline; /* Altera o layout para inline para os elementos filho de "dowload-options" */
+  }
+  .dowload-options > div img {
+    width: 120px; /* Define a largura das imagens para telas menores */
+  }
+  .copyr {
+    font-size: 0.8rem; /* Reduz o tamanho da fonte para telas menores */
+  }
+}
