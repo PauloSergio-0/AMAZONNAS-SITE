@@ -1,0 +1,269 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  background-image: radial-gradient(#ffffff, #807f7f); /* Define um plano de fundo de gradiente radial */
+}
+body{
+  background-image: radial-gradient(#ffffff, #807f7f);
+}
+.Navbar {
+  background-color: #383a3b; /* Define a cor de fundo da barra de navegação */
+  padding: 1rem; /* Adiciona um preenchimento interno à barra de navegação */
+  position: sticky; /* Define a posição como "sticky" para que a barra de navegação permaneça visível enquanto a página é rolada */
+  top: 0; /* Fixa a barra de navegação na parte superior */
+  box-shadow: 10px 0px 10px #383a3b; /* Adiciona uma sombra à barra de navegação */
+  z-index: 99; /* Define uma ordem z para garantir que a barra de navegação esteja acima de outros elementos */
+}
+
+.Navbar > div {
+  display: flex; /* Define um layout flexível para os elementos filhos da barra de navegação */
+  align-items: center; /* Alinha verticalmente os elementos filhos ao centro */
+  justify-content: space-between; /* Distribui o espaço entre os elementos filhos */
+  position: relative; /* Define a posição como "relativa" para os elementos filhos */
+}
+.A-logo {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #415ce0; /* Define a cor do texto do logotipo da empresa */
+  text-decoration: none;
+}
+
+.A-logo span {
+  color: #e0b941; /* Define a cor do texto dentro do span */
+}
+
+.b-login a {
+  text-decoration: none;
+}
+.b-login button{
+
+  display: flex; /* Define um layout flexível para o contêiner de ícones */
+  align-items: center; /* Alinha verticalmente os ícones ao centro */
+  background-color: #3950c3; /* Define a cor de fundo do botão */
+  border: 2px solid #514f4f; /* Remove a borda do botão */
+  cursor: pointer; /* Adiciona um cursor de ponteiro ao botão */
+  padding: 0.5rem 0.5rem; /* Adiciona preenchimento interno ao botão */
+  border-radius: 9999px; /* Define um raio de borda arredondado para o botão */
+  color: #fff; /* Define a cor do texto do botão */
+  font-weight: bold; /* Define o peso da fonte para o texto do botão */
+  font-size: 1rem; /* Define o tamanho da fonte para o texto do botão */
+  transition: all 0.2s; /* Adiciona uma transição suave */
+}
+.b-login button:hover {
+  background-color: #4d3e97 /* Define a cor de fundo do botão quando hover (passar o mouse por cima) */
+}
+  .img-item{
+    width: 40%;
+    border-radius: 15px;
+  }
+  .conteiner{
+    max-width: 1200px;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    contain: paint;
+  }
+  /*Produtos*/
+  .conteiner .conteiner-itens{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-gap: 30px;
+    grid-row-gap: 30px;
+    width: 100%;
+    transition: 0.3s;
+  }
+
+  .conteiner .conteiner-itens .items {
+    max-width: 200px;
+    padding: 10px;
+    margin: auto;
+    border: 1px solid #244361;
+    border-radius: 10px;
+    padding: 20px;
+    transition: 0.3s;
+    background-image: radial-gradient(#ffffff, #807f7f);
+  }
+
+  .conteiner-itens .items:hover{
+    box-shadow: 0 0 10px #666;
+    scale: 1.05;
+  }
+  .conteiner .conteiner-itens .items .img-item{
+    width: 100%;
+  }
+
+  .conteiner-itens .items .titulo-itens{
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .conteiner-itens .items .preço-itens{
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+  }
+  .conteiner-itens .items .butao-item{
+    display: block;
+    margin: 10px auto;
+    border: none;
+    background-color: #595b74;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .conteiner-itens .items .butao-sb{
+    display: block;
+    margin: 10px auto;
+    border: none;
+    background-color: #606273;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  /*seção carrinho*/
+  .carrinho{
+    border: 1px solid #666;
+    width: 35%;
+    margin-top: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: auto;
+    position: sticky !important;
+    top: 0;
+    transition: 0.3;
+    opacity: 0;
+    margin-right: -100%;
+  } 
+  .carrinho .header-carrinho{
+    background-color: #283038;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+  }
+  .carrinho .carrinho-item{
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-bottom: 1px solid #666;
+    padding: 20px;
+  }
+  .carrinho .carrinho-item img{
+    margin-right: 20px;
+    border-radius: 15px;
+  }
+
+  .carrinho .carrinho-item .carrinho-item-titulo{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  .carrinho .carrinho-item .selecionar-quantidade{
+    display: inline-block;
+    margin-right: 25px;
+  }
+  .carrinho .carrinho-item .carrinho-item-quantidade{
+    border: none;
+    font-size: 18px;
+    background: transparent;
+    display: inline-block;
+    width: 30px;
+    padding: 5px;
+    text-align: center;
+  }
+  .carrinho .carrinho-item .selecionar-quantidade i{
+    font-size: 18px;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid black;
+    cursor: pointer;
+  }
+  .carrinho .carrinho-item .carrinho-item-pre{
+    font-weight: bold;
+    display: inline-block;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  .carrinho .carrinho-item .bt-excluir{
+    position: absolute;
+  right: 15px;
+  top: 15px;
+  color: black;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #000000;
+  cursor: pointer;
+  display: block;
+  background: transparent;
+  z-index: 20;
+  }
+
+  .carrinho .carrinho-item .bt-excluir i{
+    pointer-events: none;
+  }
+  .carrinho-total{
+    padding: 30px;
+    background-color: #757575;
+  }
+  .carrinho-total .fila{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .carrinho-total .bt-pagar{
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #242633;
+    color: #fff;
+    border-radius: 15px;
+    font-size: 18px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .carrinho-total .bt-pagar:hover{
+    scale: 1.05;
+  }
+  .carrinho-itens{
+    background-color: #868686;
+  }
+  .carrinho-itens input{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+  }
+  /*Media Queries*/
+  @media screen and (max-width:850px) {
+    .conteiner{
+      display: block;
+    }
+    .conteiner-itens{
+      width: 100% !important;
+    }
+    .carrinho{
+      width: 100%;
+    }
+  }
+  
